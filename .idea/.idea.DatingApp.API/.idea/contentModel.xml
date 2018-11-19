@@ -21,9 +21,12 @@
       <e p="Migrations" t="Include">
         <e p="20181119024528_InitialCreate.cs" t="Include" />
         <e p="20181119024528_InitialCreate.Designer.cs" t="Include" />
+        <e p="20181119190337_AddedUserEntity.cs" t="Include" />
+        <e p="20181119190337_AddedUserEntity.Designer.cs" t="Include" />
         <e p="DataContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
+        <e p="User.cs" t="Include" />
         <e p="Value.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">
