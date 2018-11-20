@@ -12169,6 +12169,7 @@
             "version": "[2.2.0-preview3-35497, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
