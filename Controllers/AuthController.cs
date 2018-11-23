@@ -29,38 +29,56 @@ namespace DatingApp.API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
         {
-            userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
-            if (await _repository.UserExists(userForRegisterDto.Username))
-                return BadRequest("Username already exists");
-
-            var userToCreate = new User
+            try
             {
-                Username = userForRegisterDto.Username,
+                userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
+                if (await _repository.UserExists(userForRegisterDto.Username))
+                    return BadRequest("Username already exists");
+
+                var userToCreate = new User
+                {
+                    Username = userForRegisterDto.Username,
                
-            };
+                };
 
-            var createdUser = await _repository.Register(userToCreate, userForRegisterDto.Password);
+                var createdUser = await _repository.Register(userToCreate, userForRegisterDto.Password);
 
-            return StatusCode(201);
+                return StatusCode(201);
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode(500, "There was an error on registration");
+            }
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
-            var userFromRepo = await _repository.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password);
-
-            if (userFromRepo == null)
-                return Unauthorized();
-
-            var tokenDescriptor = CreateTokenDescriptor(userFromRepo);
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-
-            return Ok(new
+            try
             {
-                token = tokenHandler.WriteToken(token)
-            });
+                var userFromRepo = await _repository.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password);
+
+                if (userFromRepo == null)
+                    return Unauthorized();
+
+                var tokenDescriptor = CreateTokenDescriptor(userFromRepo);
+
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var token = tokenHandler.CreateToken(tokenDescriptor);
+
+                return Ok(new
+                {
+                    token = tokenHandler.WriteToken(token)
+                });
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode(500, "There was an error on login");
+            }
         }
 
         private SecurityTokenDescriptor CreateTokenDescriptor(User user)

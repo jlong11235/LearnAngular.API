@@ -25,6 +25,9 @@
         <e p="UserForLoginDto.cs" t="Include" />
         <e p="UserForRegisterDto.cs" t="Include" />
       </e>
+      <e p="Helpers" t="Include">
+        <e p="Extensions.cs" t="Include" />
+      </e>
       <e p="Migrations" t="Include">
         <e p="20181119024528_InitialCreate.cs" t="Include" />
         <e p="20181119024528_InitialCreate.Designer.cs" t="Include" />

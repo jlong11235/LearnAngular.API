@@ -12,6 +12,12 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.0-preview3-35497" />
+    <PackageReference Include="NUnit" Version="3.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="DatingAppAPI.UnitTests\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="DatingAppAPI.UnitTests\obj\project.packagespec.json" />
   </ItemGroup>
 
 </Project>
