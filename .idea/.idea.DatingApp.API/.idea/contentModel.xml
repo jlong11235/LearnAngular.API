@@ -45,6 +45,8 @@
         <e p="20181119024528_InitialCreate.Designer.cs" t="Include" />
         <e p="20181119190337_AddedUserEntity.cs" t="Include" />
         <e p="20181119190337_AddedUserEntity.Designer.cs" t="Include" />
+        <e p="20181130182134_ExtendedUserClass.cs" t="Include" />
+        <e p="20181130182134_ExtendedUserClass.Designer.cs" t="Include" />
         <e p="DataContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
