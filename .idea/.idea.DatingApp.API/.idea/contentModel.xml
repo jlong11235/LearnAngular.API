@@ -7,6 +7,9 @@
     <e p="C:\Users\jlong\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_DatingApp.863713120.00" t="ExcludeRecursive" />
     <e p="C:\Users\jlong\DatingApp\DatingApp.API" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
+      <e p=".merge_file_a02784" t="Include" />
+      <e p=".merge_file_a03316" t="Include" />
+      <e p=".merge_file_a06120" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
@@ -42,8 +45,6 @@
         <e p="20181119024528_InitialCreate.Designer.cs" t="Include" />
         <e p="20181119190337_AddedUserEntity.cs" t="Include" />
         <e p="20181119190337_AddedUserEntity.Designer.cs" t="Include" />
-        <e p="20181128170249_ExtendedUserClass.cs" t="Include" />
-        <e p="20181128170249_ExtendedUserClass.Designer.cs" t="Include" />
         <e p="DataContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
