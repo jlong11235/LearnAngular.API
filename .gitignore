@@ -8,3 +8,10 @@ obj
 /bin/Debug/netcoreapp2.1/DatingApp.API.pdb
 /bin/Debug/netcoreapp2.1/DatingApp.API.dll
 /obj/Debug/netcoreapp2.1/DatingApp.API.csproj.CoreCompileInputs.cache
+/DatingApp.db
+/bin/Debug/netcoreapp2.1/DatingApp.API.dll
+/bin/Debug/netcoreapp2.1/DatingApp.API.pdb
+*.cache
+/obj/Debug/netcoreapp2.1/DatingApp.API.dll
+/obj/Debug/netcoreapp2.1/DatingApp.API.pdb
+/.merge_file_*
