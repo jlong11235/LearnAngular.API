@@ -15,6 +15,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
         <e p="AuthController.cs" t="Include" />
+        <e p="PhotosController.cs" t="Include" />
         <e p="UsersController.cs" t="Include" />
         <e p="ValuesController.cs" t="Include" />
       </e>
@@ -30,6 +31,8 @@
       <e p="DatingApp.API.csproj" t="IncludeRecursive" />
       <e p="DatingApp.db" t="Include" />
       <e p="Dtos" t="Include">
+        <e p="PhotoForCreationDto.cs" t="Include" />
+        <e p="PhotoForReturnDto.cs" t="Include" />
         <e p="PhotosForDetailsDto.cs" t="Include" />
         <e p="UserForDetailedDto.cs" t="Include" />
         <e p="UserForListDto.cs" t="Include" />
@@ -39,6 +42,7 @@
       </e>
       <e p="Helpers" t="Include">
         <e p="AutoMapperProfiles.cs" t="Include" />
+        <e p="CloudinarySettings.cs" t="Include" />
         <e p="Extensions.cs" t="Include" />
       </e>
       <e p="Migrations" t="Include">
@@ -48,6 +52,8 @@
         <e p="20181119190337_AddedUserEntity.Designer.cs" t="Include" />
         <e p="20181130182134_ExtendedUserClass.cs" t="Include" />
         <e p="20181130182134_ExtendedUserClass.Designer.cs" t="Include" />
+        <e p="20181210025002_AddedPublicId.cs" t="Include" />
+        <e p="20181210025002_AddedPublicId.Designer.cs" t="Include" />
         <e p="DataContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
