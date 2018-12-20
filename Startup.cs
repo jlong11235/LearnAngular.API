@@ -44,6 +44,7 @@ namespace DatingApp.API
                 });
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddCors();
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddAutoMapper();
             services.AddTransient<Seed>();
             services.AddScoped<IDatingRepository, DatingRepository>();
