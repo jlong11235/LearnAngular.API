@@ -45,6 +45,9 @@
         <e p="CloudinarySettings.cs" t="Include" />
         <e p="Extensions.cs" t="Include" />
         <e p="LogUserActivity.cs" t="Include" />
+        <e p="PagedList.cs" t="Include" />
+        <e p="PaginationHeader.cs" t="Include" />
+        <e p="UserParams.cs" t="Include" />
       </e>
       <e p="Migrations" t="Include">
         <e p="20181119024528_InitialCreate.cs" t="Include" />
